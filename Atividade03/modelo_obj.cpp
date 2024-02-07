@@ -29,7 +29,7 @@ public:
                 std::vector<int> faceIndices;
                 int index;
                 while (iss >> index) {
-                    faceIndices.push_back(index - 1);  // OBJ usa índices baseados em 1
+                    faceIndices.push_back(index - 1);
                 }
                 faces.push_back(faceIndices);
             }
@@ -37,6 +37,14 @@ public:
 
         file.close();
         return true;
+    }
+
+    const std::vector<glm::vec3>& getVertices() const {
+        return vertices;
+    }
+
+    const std::vector<std::vector<int>>& getFaces() const {
+        return faces;
     }
 
     void printData() const {
@@ -49,7 +57,7 @@ public:
         for (const auto& face : faces) {
             std::cout << "f ";
             for (const auto& index : face) {
-                std::cout << index + 1 << " ";  // Adiciona 1 para converter de volta para índices baseados em 1
+                std::cout << index + 1 << " ";
             }
             std::cout << std::endl;
         }
