@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/lari-/Desktop/UFSCar/2023-2/computacao-grafica/Atividade03",
-      "program": "c:/Users/lari-/Desktop/UFSCar/2023-2/computacao-grafica/Atividade03/build/Debug/outDebug",
+      "cwd": "c:/Users/lari-/Desktop/UFSCar/2023-2/computacao-grafica/Atividade05",
+      "program": "c:/Users/lari-/Desktop/UFSCar/2023-2/computacao-grafica/Atividade05/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
